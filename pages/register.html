@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Sign Up</title>
+    <script src="../js/toggleMenu.js" defer></script>
+    <script src="../js/resetMenu.js" defer></script>
+    <script src="../js/sign up.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1><a href="../index.html">Shopping Cart</a></h1>
+      <nav>
+        <a href="./login.html">Sign In</a>
+        <a href="#">Sign Up</a>
+      </nav>
+      <div class="menu fas fa-bars"></div>
+    </header>
+
+    <section class="form">
+      <h2>Sign Up</h2>
+      <form novalidate>
+        <div class="box">
+          <input type="email" placeholder="Enter Email..." />
+          <div class="emailMsgErr"></div>
+        </div>
+        <div class="box">
+          <input type="text" placeholder="Enter UserName..." />
+          <div class="nameMsgErr"></div>
+        </div>
+        <div class="box">
+          <input type="password" placeholder="Enter Password..." />
+          <div class="passMsgErr"></div>
+        </div>
+        <button type="submit" class="submit">Sign Up</button>
+      </form>
+      <p class="have_account">
+        Have an account ? <a href="./login.html">Sign In</a>
+      </p>
+    </section>
+  </body>
+</html>

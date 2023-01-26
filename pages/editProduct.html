@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Edit Product</title>
+    <script src="../js/showUser.js" defer></script>
+    <script src="../js/products.js"></script>
+    <script src="../js/edit-product.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1><a href="../index.html">Shopping Cart</a></h1>
+      <nav>
+        <a href="./login.html">Sign In</a>
+        <a href="./register.html">Sign Up</a>
+      </nav>
+    </header>
+    <section class="form">
+      <h2>Edit Your Own Product</h2>
+      <form>
+        <div class="box">
+          <input type="file" id="upload_image" />
+        </div>
+        <div class="box">
+          <input type="text" placeholder="Product Name..." id="product-name" />
+        </div>
+        <div class="box">
+          <input
+            type="text"
+            placeholder="Product Description..."
+            id="product-desc"
+          />
+        </div>
+
+        <div class="box">
+          <select id="product-size">
+            <option value="" hidden>select size</option>
+            <option value="small">small</option>
+            <option value="medium">medium</option>
+            <option value="large">large</option>
+          </select>
+        </div>
+        <button type="submit" id="update-product" class="submit">update</button>
+      </form>
+    </section>
+  </body>
+</html>

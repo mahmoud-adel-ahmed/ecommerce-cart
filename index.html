@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Shopping Cart</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/products.js"></script>
+    <script src="./js/showUser.js" defer></script>
+    <script src="./js/toggleMenu.js" defer></script>
+    <script src="./js/resetMenu.js" defer></script>
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1><a href="#">Shopping Cart</a></h1>
+      <nav>
+        <a href="./pages/login.html">Sign In</a>
+        <a href="./pages/register.html">Sign Up</a>
+      </nav>
+      <div class="menu fas fa-bars"></div>
+    </header>
+    <main>
+      <section class="home">
+        <h2>Products</h2>
+        <div class="container">
+          <div class="content">
+            <div class="box-search">
+              <input
+                type="search"
+                class="searchProducts"
+                placeholder="Search products"
+              />
+              <select class="select-filter">
+                <option value="" hidden>filter by size</option>
+                <option value="all">all</option>
+                <option value="small">small</option>
+                <option value="medium">medium</option>
+                <option value="large">large</option>
+              </select>
+            </div>
+            <div class="alert"></div>
+            <div class="products"></div>
+            <div class="create">
+              <a
+                href="./pages/createProduct.html"
+                class="create-icon"
+                target="_blank"
+              >
+                <i class="fas fa-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
