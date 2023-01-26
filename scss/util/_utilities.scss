@@ -84,14 +84,15 @@
   background-color: rgb(209, 24, 209);
   width: 100%;
   height: 0rem;
-  transition: height 0.3s ease;
   border-radius: 0.5rem;
   margin-bottom: 0.5rem;
-  transform-origin: top;
-  line-height: 4rem;
+  transform-origin: top left;
+  transition: all 1s linear;
+  line-height: 4.5rem;
   position: sticky;
-  top: 4.9rem;
+  top: 5rem;
   z-index: 13;
+  display: none;
   p {
     font-size: 2rem;
     margin-left: 1rem;
@@ -99,6 +100,7 @@
     text-transform: capitalize;
   }
   &.active {
-    height: 4rem;
+    display: block;
+    height: 4.5rem;
   }
 }
