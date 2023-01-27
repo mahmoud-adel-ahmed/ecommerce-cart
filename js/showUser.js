@@ -34,7 +34,6 @@ function calcQuantity(items) {
 
     cartIcon.innerHTML = `<i class="fas fa-shopping-cart"></i>`;
     cartIcon.classList.add("cartIcon");
-    cartIcon.classList.add("minCart");
     amount.classList.add("badge");
 
     cartItem.href = "../pages/cart.html";

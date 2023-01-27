@@ -6,12 +6,12 @@ let filterTypes = document.querySelector(".select-filter");
 function drawUiProducts(products = []) {
   let product = products?.map((prod) => {
     return `<div class="product" style="border:${
-      prod.isMe ? "2px solid purple" : ""
+      prod.isMe ? "2px solid #2c5364" : ""
     }">
       <img src="${prod.img}" alt="image"  />
       <div class="info">
           <h3 class="name">
-            <a href='cartDetails.html' target='_blank' 
+            <a href='../pages/cartDetails.html' target='_blank' 
             onclick="saveIdToStorage(${prod.id})">${prod.name}</a>
           </h3>
           <p class="title">${prod.title}</p>
@@ -22,7 +22,7 @@ function drawUiProducts(products = []) {
             })" class="add">add to cart</button>
             <button class="love">
               <i class="${
-                prod.liked ? "purple fa" : "far"
+                prod.liked ? "iconColor fa" : "far"
               } fa-heart" onclick="addToFavorites(${prod.id})"></i>
             </button>
             ${
