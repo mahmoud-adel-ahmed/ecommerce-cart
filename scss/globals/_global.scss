@@ -1,0 +1,41 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow-x: hidden;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  font-size: 55%;
+  @media screen and (min-width: 36em) {
+    font-size: 62.5%;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.iconColor {
+  color: #2c5364;
+}
+
+.noProds {
+  color: #2c5364;
+  font-size: 1.7rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 90rem;
+  margin-inline: auto;
+}
