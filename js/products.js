@@ -2,8 +2,8 @@ let products = [
   {
     name: "product one",
     id: 1,
-    title: "/Lorem ipsum dolor, sit amet adipisicing",
-    img: "assets/s1.jpg",
+    title: "Lorem ipsum dolor, sit amet adipisicing",
+    img: "/assets/s1.jpg",
     quantity: 1,
     size: "small",
     isMe: false,
